@@ -33,30 +33,6 @@ export const delBook = gql`
   }
 `;
 
-// export const updateBook = gql`
-//   mutation UpdateBook(
-//     $_id: ID!
-//     $title: String!
-//     $author: String!
-//     $description: String!
-//   ) {
-//     updateBook(
-//       _id: $_id
-//       title: $title
-//       author: $author
-//       description: $description
-//     ) {
-//       _id
-//       title
-//       author {
-//         name
-//         description
-//       }
-//       description
-//     }
-//   }
-// `;
-
 export const updatebook = gql`
   mutation UpdateBook(
     $_id: ID!

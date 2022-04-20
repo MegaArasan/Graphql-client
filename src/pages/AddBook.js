@@ -36,7 +36,6 @@ function AddBook() {
             description: newbook.description,
           },
         });
-        // console.log(newbook.authorname);
         addAuthor({
           variables: {
             name: newbook.authorname,
@@ -58,7 +57,6 @@ function AddBook() {
     <div className="flex flex-col items-center">
       <h1 className="text-4xl text-sky-500">AddBook</h1>
       <form onSubmit={handleSubmit}>
-        {/* <fieldset> */}
         <input
           name="title"
           id="title"

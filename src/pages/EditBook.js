@@ -29,10 +29,7 @@ export default EditBook;
 function EDIT({ book, id }) {
   const navigate = useNavigate();
   const [updateBook] = useMutation(updatebook);
-  // const [addAuthor] = useMutation(addauthor);
-  // const [updateauthor] = useUpdateAuthor();
   const [updateauthor] = useMutation(updateAuthor);
-  //   const { loading: loading2, data: data2 } = useQuery(Authors);
 
   const { handleBlur, handleChange, handleSubmit, values } = useFormik({
     initialValues: {
@@ -62,14 +59,10 @@ function EDIT({ book, id }) {
       navigate("/");
     },
   });
-  //   if (loading2) {
-  //     return "Loading...";
-  //   }
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-4xl text-sky-500">EditBook</h1>
       <form onSubmit={handleSubmit}>
-        {/* <fieldset> */}
         <label className="text-2xl text-sky-500">Book Title</label>
         <input
           name="title"
